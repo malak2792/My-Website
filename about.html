@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - My Website</title>
+    <title>About Us - Studio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+    <header class="site-header">
+        <a class="logo" href="index.html">Studio</a>
         <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>About Us</h1>
-        <p>This is the about page of my website.</p>
+    <main class="container">
+        <section class="section" style="padding: 40px 0;">
+            <h1>About Us</h1>
+            <p class="label">This is the about page of my website, built using CSS Grid, Flexbox, and shared CSS variables.</p>
+            
+            <article class="card" style="margin-top: 24px;">
+                <h3>Our Mission</h3>
+                <p>We aim to build clean, responsive layouts with modern CSS components, ensuring high accessibility standards and dark mode support.</p>
+            </article>
+        </section>
     </main>
+
+    <footer class="site-footer" style="margin-top: 48px;">
+        <div class="container">About Us - Studio</div>
+    </footer>
 
 </body>
 </html>

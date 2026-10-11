@@ -3,85 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - My Website</title>
+    <title>Contact Us - Studio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+    <header class="site-header">
+        <a class="logo" href="index.html">Studio</a>
         <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Contact Us</h1>
-
-        <form action="#" method="POST">
+    <main class="container">
+        <section class="section" style="padding: 40px 0;">
+            <h1>Contact Us</h1>
+            <p class="label">Questions about the lab? Send us a message.</p>
             
-            <div>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-            </div>
-            <br>
+            <article class="card" style="margin-top: 24px; max-width: 600px;">
+                <form action="#" method="POST">
+                    
+                    <div style="margin-bottom: 16px;">
+                        <label for="fullname" style="display: block; margin-bottom: 6px;">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--text); background: var(--bg); color: var(--text);">
+                    </div>
 
-            <div>
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label for="email" style="display: block; margin-bottom: 6px;">Email Address:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--text); background: var(--bg); color: var(--text);">
+                    </div>
 
-            <div>
-                <label for="phone">Phone Number:</label>
-                <input type="number" id="phone" name="phone">
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label for="phone" style="display: block; margin-bottom: 6px;">Phone Number:</label>
+                        <input type="number" id="phone" name="phone" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--text); background: var(--bg); color: var(--text);">
+                    </div>
 
-            <div>
-                <label for="birthdate">Date of Birth:</label>
-                <input type="date" id="birthdate" name="birthdate">
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label for="birthdate" style="display: block; margin-bottom: 6px;">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--text); background: var(--bg); color: var(--text);">
+                    </div>
 
-            <div>
-                <label>Gender:</label><br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; margin-bottom: 6px;">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male" style="margin-right: 16px;">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
 
-            <div>
-                <label>Interests:</label><br>
-                <input type="checkbox" id="coding" name="interests" value="coding">
-                <label for="coding">Coding</label>
-                <input type="checkbox" id="design" name="interests" value="design">
-                <label for="design">Design</label>
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; margin-bottom: 6px;">Interests:</label>
+                        <input type="checkbox" id="coding" name="interests" value="coding">
+                        <label for="coding" style="margin-right: 16px;">Coding</label>
+                        <input type="checkbox" id="design" name="interests" value="design">
+                        <label for="design">Design</label>
+                    </div>
 
-            <div>
-                <label for="country">Country:</label>
-                <select id="country" name="country">
-                    <option value="egypt">Egypt</option>
-                    <option value="saudi">Saudi Arabia</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label for="country" style="display: block; margin-bottom: 6px;">Country:</label>
+                        <select id="country" name="country" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--text); background: var(--bg); color: var(--text);">
+                            <option value="egypt">Egypt</option>
+                            <option value="saudi">Saudi Arabia</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
 
-            <div>
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="30"></textarea>
-            </div>
-            <br>
+                    <div style="margin-bottom: 16px;">
+                        <label for="message" style="display: block; margin-bottom: 6px;">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--text); background: var(--bg); color: var(--text);"></textarea>
+                    </div>
 
-            <button type="submit">Send Message</button>
-
-        </form>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </article>
+        </section>
     </main>
+
+    <footer class="site-footer" style="margin-top: 48px;">
+        <div class="container">Contact Us - Studio</div>
+    </footer>
 
 </body>
 </html>
